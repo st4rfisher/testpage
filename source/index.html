@@ -67,23 +67,61 @@
             </li>
           </ul>
         </div>
-
-        <ul class="catalog__all-categories">
-          <li class="catalog__all-categories-item"><a class="catalog__categories-link" href="#">Название категории</a></li>
-          <li class="catalog__all-categories-item"><a class="catalog__categories-link" href="#">Название категории</a></li>
-          <li class="catalog__all-categories-item"><a class="catalog__categories-link" href="#">Название категории</a></li>
-          <li class="catalog__all-categories-item"><a class="catalog__categories-link" href="#">Название категории</a></li>
-          <li class="catalog__all-categories-item"><a class="catalog__categories-link" href="#">Название категории</a></li>
-        </ul>
-        <button class="catalog__all-categories-button">Ещё 10 категорий...</button>
-        <div>
-
+        <div class="catalog__all-categories">
+          <h3 class="catalog__all-categories-title">Все категории</h3>
+          <ul class="catalog__all-categories-list">
+            <li class="catalog__all-categories-item">
+              <a class="catalog__categories-link" href="#">Категория в которой нашли что-то (ххх)</a>
+            </li>
+            <li class="catalog__all-categories-item">
+              <a class="catalog__categories-link" href="#">Категория в которой нашли что-то (ххх)</a>
+            </li>
+            <li class="catalog__all-categories-item">
+              <a class="catalog__categories-link" href="#">Категория в которой нашли что-то (ххх)</a>
+            </li>
+            <li class="catalog__all-categories-item">
+              <a class="catalog__categories-link" href="#">Категория в которой нашли что-то (ххх)</a>
+            </li>
+            <li class="catalog__all-categories-item">
+              <a class="catalog__categories-link" href="#">Категория в которой нашли что-то (ххх)</a>
+            </li>
+            <li class="catalog__all-categories-item">
+              <a class="catalog__categories-link" href="#">Категория в которой нашли что-то (ххх)</a>
+            </li>
+            <li class="catalog__all-categories-item">
+              <a class="catalog__categories-link" href="#">Категория в которой нашли что-то (ххх)</a>
+            </li>
+            <li class="catalog__all-categories-item">
+              <a class="catalog__categories-link" href="#">Категория в которой нашли что-то (ххх)</a>
+            </li>
+          </ul>
+          <button class="catalog__all-categories-button">Ещё 10 категорий...</button>
         </div>
-
         <form class="catalog__filters" method="get" action="#">
-          <fieldset class="catalog__price">
-            <legend>Цена, валюта</legend>
-            <div class="catalog__range-filter" tabindex="0" aria-label="Фильтр выбора цены">
+          <!-- <fieldset class="catalog__price"> -->
+            <!-- <legend>Цена, валюта</legend> -->
+
+            <fieldset class="catalog__price">
+              <legend class="catalog__price-legend">Цена, валюта:</legend>
+                <div class="catalog__price-controls">
+                  от
+                  <input class="catalog__min-price" type="text" name="min-price" value="1000" aria-label="Поле ввода минимальной цены">
+                  до
+                  <input class="catalog__max-price" type="text" name="max-price" value="100000"  aria-label="Поле ввода максимальной цены">
+                  Р
+                </div>
+
+                <div class="catalog__range-filter" tabindex="0" aria-label="Фильтр выбора цены">
+                  <div class="catalog__range-controls">
+                    <div class="catalog__scale">
+                      <div class="catalog__bar" style="width: 100%"></div>
+                    </div>
+                    <div class="catalog__toggle catalog__toggle-min" style="left: 14px" tabindex="0" aria-label="Ручка минимальной цены"></div>
+                    <div class="catalog__toggle catalog__toggle-max" style="left: 269px" tabindex="0" aria-label="Ручка максимальной цены"></div>
+                  </div>
+                </div>
+            </fieldset>
+            <!-- <div class="catalog__range-filter" tabindex="0" aria-label="Фильтр выбора цены">
               <div class="catalog__range-controls">
                 <div class="catalog__scale">
                   <div class="catalog__bar" style="width: 80%; margin-left: 0%"></div>
@@ -97,8 +135,9 @@
                 <span>–</span>
                 <input class="catalog__max-price" type="text" name="max-price" value="30000"  aria-label="Поле ввода максимальной цены">
               </div>
-            </div>
-          </fieldset>
+            </div> -->
+
+          <!-- </fieldset> -->
           <fieldset class="catalog__brands">
             <legend>Бренды:</legend>
             <ul class="catalog__brands-filters">
@@ -155,63 +194,64 @@
               <option>24</option>
             </select>
           </div>
-          <ul class="catalog__products">
-            <li class="catalog__product">
-              <img class="catalog__product-image" src="" alt="">
-              <h3 class="catalog__product-name">Наименование товара, которое не более 2 строк</h3>
-              <span class="catalog__product-price">ХХ ХХХ , $</span>
-              <button class="catalog__product-button">Кнопка</button>
-            </li>
-            <li class="catalog__product">
-              <img class="catalog__product-image" src="" alt="">
-              <h3 class="catalog__product-name">Наименование товара, которое не более 2 строк</h3>
-              <span class="catalog__product-price">ХХ ХХХ , $</span>
-              <button class="catalog__product-button">Кнопка</button>
-            </li>
-            <li class="catalog__product">
-              <img class="catalog__product-image" src="" alt="">
-              <h3 class="catalog__product-name">Наименование товара, которое не более 2 строк</h3>
-              <span class="catalog__product-price">ХХ ХХХ , $</span>
-              <button class="catalog__product-button">Кнопка</button>
-            </li>
-            <li class="catalog__product">
-              <img class="catalog__product-image" src="" alt="">
-              <h3 class="catalog__product-name">Наименование товара, которое не более 2 строк</h3>
-              <span class="catalog__product-price">ХХ ХХХ , $</span>
-              <button class="catalog__product-button">Кнопка</button>
-            </li>
-            <li class="catalog__product">
-              <img class="catalog__product-image" src="" alt="">
-              <h3 class="catalog__product-name">Наименование товара, которое не более 2 строк</h3>
-              <span class="catalog__product-price">ХХ ХХХ , $</span>
-              <button class="catalog__product-button">Кнопка</button>
-            </li>
-            <li class="catalog__product">
-              <img class="catalog__product-image" src="" alt="">
-              <h3 class="catalog__product-name">Наименование товара, которое не более 2 строк</h3>
-              <span class="catalog__product-price">ХХ ХХХ , $</span>
-              <button class="catalog__product-button">Кнопка</button>
-            </li>
-            <li class="catalog__product">
-              <img class="catalog__product-image" src="" alt="">
-              <h3 class="catalog__product-name">Наименование товара, которое не более 2 строк</h3>
-              <span class="catalog__product-price">ХХ ХХХ , $</span>
-              <button class="catalog__product-button">Кнопка</button>
-            </li>
-            <li class="catalog__product">
-              <img class="catalog__product-image" src="" alt="">
-              <h3 class="catalog__product-name">Наименование товара, которое не более 2 строк</h3>
-              <span class="catalog__product-price">ХХ ХХХ , $</span>
-              <button class="catalog__product-button">Кнопка</button>
-            </li>
-            <li class="catalog__product">
-              <img class="catalog__product-image" src="" alt="">
-              <h3 class="catalog__product-name">Наименование товара, которое не более 2 строк</h3>
-              <span class="catalog__product-price">ХХ ХХХ , $</span>
-              <button class="catalog__product-button">Кнопка</button>
-            </li>
-          </ul>
         </div>
+        <ul class="catalog__products">
+          <li class="catalog__product">
+            <img class="catalog__product-image" src="" alt="">
+            <h3 class="catalog__product-name">Наименование товара, которое не более 2 строк</h3>
+            <span class="catalog__product-price">ХХ ХХХ , $</span>
+            <button class="catalog__product-button">Кнопка</button>
+          </li>
+          <li class="catalog__product">
+            <img class="catalog__product-image" src="" alt="">
+            <h3 class="catalog__product-name">Наименование товара, которое не более 2 строк</h3>
+            <span class="catalog__product-price">ХХ ХХХ , $</span>
+            <button class="catalog__product-button">Кнопка</button>
+          </li>
+          <li class="catalog__product">
+            <img class="catalog__product-image" src="" alt="">
+            <h3 class="catalog__product-name">Наименование товара, которое не более 2 строк</h3>
+            <span class="catalog__product-price">ХХ ХХХ , $</span>
+            <button class="catalog__product-button">Кнопка</button>
+          </li>
+          <li class="catalog__product">
+            <img class="catalog__product-image" src="" alt="">
+            <h3 class="catalog__product-name">Наименование товара, которое не более 2 строк</h3>
+            <span class="catalog__product-price">ХХ ХХХ , $</span>
+            <button class="catalog__product-button">Кнопка</button>
+          </li>
+          <li class="catalog__product">
+            <img class="catalog__product-image" src="" alt="">
+            <h3 class="catalog__product-name">Наименование товара, которое не более 2 строк</h3>
+            <span class="catalog__product-price">ХХ ХХХ , $</span>
+            <button class="catalog__product-button">Кнопка</button>
+          </li>
+          <li class="catalog__product">
+            <img class="catalog__product-image" src="" alt="">
+            <h3 class="catalog__product-name">Наименование товара, которое не более 2 строк</h3>
+            <span class="catalog__product-price">ХХ ХХХ , $</span>
+            <button class="catalog__product-button">Кнопка</button>
+          </li>
+          <li class="catalog__product">
+            <img class="catalog__product-image" src="" alt="">
+            <h3 class="catalog__product-name">Наименование товара, которое не более 2 строк</h3>
+            <span class="catalog__product-price">ХХ ХХХ , $</span>
+            <button class="catalog__product-button">Кнопка</button>
+          </li>
+          <li class="catalog__product">
+            <img class="catalog__product-image" src="" alt="">
+            <h3 class="catalog__product-name">Наименование товара, которое не более 2 строк</h3>
+            <span class="catalog__product-price">ХХ ХХХ , $</span>
+            <button class="catalog__product-button">Кнопка</button>
+          </li>
+          <li class="catalog__product">
+            <img class="catalog__product-image" src="" alt="">
+            <h3 class="catalog__product-name">Наименование товара, которое не более 2 строк</h3>
+            <span class="catalog__product-price">ХХ ХХХ , $</span>
+            <button class="catalog__product-button">Кнопка</button>
+          </li>
+        </ul>
+
 
       </section>
     </div>

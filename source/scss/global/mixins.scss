@@ -32,17 +32,6 @@
   line-height: 32px;
 }
 
-
-@mixin paragraph {
-  font-family: "Open Sans", "Tahoma", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 19px;
-  word-break: break-word;
-  letter-spacing: 0.03em;
-}
-
 @mixin paragraph {
   font-family: "Open Sans", "Tahoma", sans-serif;
   font-style: normal;
